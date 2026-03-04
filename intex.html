@@ -8,46 +8,37 @@
 </head>
 <body>
     <div class="game-container">
-        <!-- Start Screen -->
-        <div class="start-screen" id="startScreen">
+        <div class="start-screen" id="loginScreen">
             <div class="mascot">🚀</div>
+            <h1 class="title">Welcome!</h1>
+            <p class="subtitle">Enter your name to start the challenge:</p>
+            <input type="text" id="playerNameInput" placeholder="Your Name" maxlength="15" style="padding: 10px; border-radius: 10px; border: 2px solid #667eea; margin: 20px 0; font-size: 1.2em; text-align: center;">
+            <br>
+            <button class="start-btn" onclick="saveNameAndStart()">Next</button>
+        </div>
+
+        <div class="start-screen hidden" id="startScreen">
+            <div class="mascot">🎯</div>
             <h1 class="title">Multiplication Table</h1>
-            <p class="subtitle">Test your knowledge! You have 10 seconds for each question.</p>
+            <p class="subtitle" id="welcomeMessage"></p>
             <br><br>
             <button class="start-btn" onclick="startGame()">Start Game!</button>
         </div>
 
-        <!-- Game Screen -->
         <div class="game-screen hidden" id="gameScreen">
             <div class="streak" id="streak">🔥 Streak: 0</div>
-            
-            <div class="header">
-                <h1 class="title">Multiplication Table</h1>
-            </div>
-
+            <div class="header"><h1 class="title">Math Quiz</h1></div>
             <div class="stats-bar">
-                <div class="stat">
-                    <div class="stat-label">Score</div>
-                    <div class="stat-value" id="score">0</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-label">Question</div>
-                    <div class="stat-value" id="questionNum">1/10</div>
-                </div>
+                <div class="stat"><div class="stat-label">Score</div><div class="stat-value" id="score">0</div></div>
+                <div class="stat"><div class="stat-label">Question</div><div class="stat-value" id="questionNum">1/10</div></div>
             </div>
-
             <div class="timer-container">
-                <div class="timer-bar">
-                    <div class="timer-progress" id="timerProgress"></div>
-                </div>
+                <div class="timer-bar"><div class="timer-progress" id="timerProgress"></div></div>
                 <div class="timer-text" id="timerText">10 sec</div>
             </div>
-
             <div class="question-card" id="questionCard">
                 <div class="question" id="question">? × ? = ?</div>
-                <div class="question-hint">Choose the correct answer</div>
             </div>
-
             <div class="answers-grid" id="answersGrid">
                 <button class="answer-btn" onclick="checkAnswer(0)">?</button>
                 <button class="answer-btn" onclick="checkAnswer(1)">?</button>
@@ -55,19 +46,22 @@
             </div>
         </div>
 
-        <!-- End Screen -->
         <div class="end-screen hidden" id="endScreen">
             <div class="mascot">🏆</div>
             <h2 class="title">Game Over!</h2>
             <div class="final-score" id="finalScore">0</div>
-            <div class="stars" id="stars"></div>
-            <p class="result-message" id="resultMessage"></p>
+            <div id="stars"></div>
+            
+            <div id="leaderboardSection" style="margin: 20px 0; text-align: left; background: #f8f9fa; padding: 15px; border-radius: 15px;">
+                <h3 style="text-align: center; color: #764ba2;">Top 5 Players</h3>
+                <div id="leaderboardList">Loading...</div>
+            </div>
+
             <button class="restart-btn" onclick="restartGame()">Play Again</button>
         </div>
 
         <div class="feedback" id="feedback"></div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
