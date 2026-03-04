@@ -17,5 +17,5 @@ An interactive and colorful web game designed to test and improve your multiplic
 ## 🏆 Leaderboard
 Can you become a Math Genius? View the full rankings of all players here:
 
-👉 **[View Full Leaderboard (Google Sheets)](https://docs.google.com/spreadsheets/d/e/2PACX-1vT1IbMeMwNkT5UnGS7P1vFbA9PLMSdXZvkbmrF8Rk7llMMGHLKi2xc7iR0emOTWGa_7rKMuwrsrFGQc/pubhtml)**
+👉 **[View Full Leaderboard](https://docs.google.com/spreadsheets/d/e/2PACX-1vT1IbMeMwNkT5UnGS7P1vFbA9PLMSdXZvkbmrF8Rk7llMMGHLKi2xc7iR0emOTWGa_7rKMuwrsrFGQc/pubhtml)**
 
