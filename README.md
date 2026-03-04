@@ -1,28 +1,21 @@
-# 🎯 Multiplication Table - Math Quiz
+# 🎯 Multiplication Table Quiz
 
-Interactive game for learning multiplication table for elementary school students.
+An interactive and colorful web game designed to test and improve your multiplication skills! Answer questions, build streaks, and compete for a spot in the Top 5.
 
-## 🎮 Features
-- 10 random questions
-- Countdown timer
-- Scoring system
-- Animations and visual effects
-- Streak counter
-- Confetti celebration for high scores
+## ✨ Features
+* **Timed Challenges:** You have 10 seconds for each question. Speed matters!
+* **Streak System:** Get more than 2 correct answers in a row to start a fire streak 🔥.
+* **Personalized Experience:** Enter your name once, and the game remembers you on your device.
+* **Live Leaderboard:** Real-time rankings powered by Google Sheets.
 
-## 🚀 Play Online
-[https://yourusername.github.io/multiplication-quiz/](https://yourusername.github.io/multiplication-quiz/)
+## 🎮 How to Play
+1.  **Enter your name** on the start screen.
+2.  **Start the game** and solve 10 multiplication problems.
+3.  **Choose the correct answer** from the grid before the time runs out.
+4.  **Check your rank** at the end of the game to see if you made the Top 5!
 
-## 📱 How to Play
-1. Click "Start Game!"
-2. Solve the multiplication problem within 10 seconds
-3. Choose the correct answer from 3 options
-4. Build your streak for bonus points
-5. Get 80%+ for a confetti celebration!
+## 🏆 Leaderboard
+Can you become a Math Genius? View the full rankings of all players here:
 
-## 🛠️ Technologies
-- HTML5
-- CSS3 (Animations, Gradients, Flexbox, Grid)
-- Vanilla JavaScript (ES6+)
+👉 **[View Full Leaderboard (Google Sheets)](https://docs.google.com/spreadsheets/d/e/2PACX-1vT1IbMeMwNkT5UnGS7P1vFbA9PLMSdXZvkbmrF8Rk7llMMGHLKi2xc7iR0emOTWGa_7rKMuwrsrFGQc/pubhtml)**
 
-## 📂 Project Structure
