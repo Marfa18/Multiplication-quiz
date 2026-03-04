@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎯 Multiplication Table - Math Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Start Screen -->
+        <div class="start-screen" id="startScreen">
+            <div class="mascot">🚀</div>
+            <h1 class="title">Multiplication Table</h1>
+            <p class="subtitle">Test your knowledge! You have 10 seconds for each question.</p>
+            <br><br>
+            <button class="start-btn" onclick="startGame()">Start Game!</button>
+        </div>
+
+        <!-- Game Screen -->
+        <div class="game-screen hidden" id="gameScreen">
+            <div class="streak" id="streak">🔥 Streak: 0</div>
+            
+            <div class="header">
+                <h1 class="title">Multiplication Table</h1>
+            </div>
+
+            <div class="stats-bar">
+                <div class="stat">
+                    <div class="stat-label">Score</div>
+                    <div class="stat-value" id="score">0</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-label">Question</div>
+                    <div class="stat-value" id="questionNum">1/10</div>
+                </div>
+            </div>
+
+            <div class="timer-container">
+                <div class="timer-bar">
+                    <div class="timer-progress" id="timerProgress"></div>
+                </div>
+                <div class="timer-text" id="timerText">10 sec</div>
+            </div>
+
+            <div class="question-card" id="questionCard">
+                <div class="question" id="question">? × ? = ?</div>
+                <div class="question-hint">Choose the correct answer</div>
+            </div>
+
+            <div class="answers-grid" id="answersGrid">
+                <button class="answer-btn" onclick="checkAnswer(0)">?</button>
+                <button class="answer-btn" onclick="checkAnswer(1)">?</button>
+                <button class="answer-btn" onclick="checkAnswer(2)">?</button>
+            </div>
+        </div>
+
+        <!-- End Screen -->
+        <div class="end-screen hidden" id="endScreen">
+            <div class="mascot">🏆</div>
+            <h2 class="title">Game Over!</h2>
+            <div class="final-score" id="finalScore">0</div>
+            <div class="stars" id="stars"></div>
+            <p class="result-message" id="resultMessage"></p>
+            <button class="restart-btn" onclick="restartGame()">Play Again</button>
+        </div>
+
+        <div class="feedback" id="feedback"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
