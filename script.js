@@ -1,4 +1,4 @@
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwvbub39qRjc2fMiCkOO9S31B3HuKveRHsdZTXeugF_ZhnZD2-HbJM3cOyaueNnwUO21w/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycby2qjJJ9EHDnwEtwoG1JDn8vhyX2KC7af1F3W-kj1MoLecTytag_Ac3c_VFNnM1srIHUA/exec";
 
 let score = 0;
 let currentQuestion = 0;
